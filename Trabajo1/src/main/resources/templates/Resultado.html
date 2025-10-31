@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title th:text="${titulo}">Resultado</title>
+    <style>
+        body {
+          font-family: Arial, sans-serif;
+          background-color: #eef3f8;
+          color: #333;
+          text-align: center;
+          padding: 50px;
+        }
+        h1 {
+          color: #2b5797;
+        }
+        .resultado {
+          background-color: white;
+          border-radius: 10px;
+          box-shadow: 0 0 10px rgba(0,0,0,0.1);
+          padding: 20px;
+          margin: 20px auto;
+          width: 80%;
+          text-align: left;
+        }
+        a {
+          text-decoration: none;
+          color: white;
+          background-color: #4a90e2;
+          padding: 10px 20px;
+          border-radius: 8px;
+          display: inline-block;
+          margin-top: 20px;
+        }
+        a:hover {
+          background-color: #357abd;
+        }
+    </style>
+</head>
+<body>
+<h1 th:text="${titulo}">Resultado</h1>
+<div class="resultado" th:utext="${resultado}"></div>
+<a href="/">Volver al inicio</a>
+</body>
+</html>
